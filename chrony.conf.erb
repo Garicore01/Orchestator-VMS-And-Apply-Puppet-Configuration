@@ -1,0 +1,9 @@
+server ntp1.5.ff.es.eu.org iburst
+server ntp2.5.ff.es.eu.org iburst
+sourcedir /run/chrony-dhcp
+driftfile /var/lib/chrony/drift
+makestep 1.0 3
+rtcsync
+ntsdumpdir /var/lib/chrony
+leapsectz right/UTC
+logdir /var/log/chrony
